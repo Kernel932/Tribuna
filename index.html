@@ -122,8 +122,9 @@
 
     <!-- HEADER / MENU PRINCIPAL (ESTILO G1) -->
     <header class="sticky top-0 bg-white z-40 border-b-4 border-primary shadow-sm" id="site-header">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-center justify-between h-16 md:h-20">
+      <!-- LINHA 1: LOGO E BOTÕES DE AÇÃO -->
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-[120px]">
+        <div class="flex items-center justify-between h-full">
           
           <!-- LADO ESQUERDO: HAMBURGER E LOGO -->
           <div class="flex items-center space-x-4">
@@ -134,54 +135,58 @@
             </button>
             
             <!-- Logo Tribuna Norte -->
-            <a href="#" class="flex items-center space-x-2.5 group">
-              <div class="bg-primary p-2 rounded-sm shadow-md group-hover:bg-secondary transition-colors duration-300 flex items-center justify-center">
-                <div class="w-4 h-4 border-2 border-white"></div>
-              </div>
-              <div class="flex flex-col">
-                <h1 class="text-xl md:text-2xl font-black tracking-tighter text-primary group-hover:text-secondary transition-colors uppercase">TRIBUNA<span class="font-light text-gray-700 underline decoration-primary ml-0.5">NORTE</span></h1>
-                <span class="text-gray-500 font-sans text-[9px] font-bold tracking-widest uppercase -mt-1">Notícias</span>
-              </div>
+            <a href="#" class="flex items-center group">
+              <h1 class="w-[300px] h-[60px] flex items-center select-none" id="logo-h1">
+                <img src="/src/assets/images/logo_up_1782925814458.png" alt="Tribuna Norte" class="w-full h-full object-contain group-hover:hidden" />
+                <img src="/src/assets/images/logo_hover_17829258144582.png" alt="Tribuna Norte Hover" class="w-full h-full object-contain hidden group-hover:block" />
+              </h1>
             </a>
           </div>
 
-          <!-- LADO CENTRAL: MENU DESKTOP -->
-          <nav class="hidden md:flex space-x-2 lg:space-x-4" id="desktop-nav">
-            <a href="#destaques" class="px-3 py-2 text-xs font-bold uppercase tracking-wider text-gray-600 hover:text-primary hover:bg-red-50 rounded-md transition duration-150">Destaques</a>
-            <a href="#noticias" class="px-3 py-2 text-xs font-bold uppercase tracking-wider text-gray-600 hover:text-primary hover:bg-red-50 rounded-md transition duration-150">Notícias</a>
-            <a href="#marketing" class="px-3 py-2 text-xs font-bold uppercase tracking-wider text-gray-600 hover:text-primary hover:bg-red-50 rounded-md transition duration-150">Marketing</a>
-            <a href="#contato" class="px-3 py-2 text-xs font-bold uppercase tracking-wider text-gray-600 hover:text-primary hover:bg-red-50 rounded-md transition duration-150">Contato</a>
-            <a href="#fato-ou-fake" class="px-3 py-2 text-xs font-bold uppercase tracking-wider text-red-600 hover:text-primary hover:bg-red-50 rounded-md transition duration-150 flex items-center space-x-1.5">
-              <span class="inline-block w-1.5 h-1.5 rounded-full bg-red-600 animate-pulse"></span>
-              <span>Fato ou Fake</span>
-            </a>
-          </nav>
-
-          <!-- LADO DIREITO: BARRA DE BUSCA E BOTÃO WHATSAPP / DENÚNCIA -->
+          <!-- LADO DIREITO: BOTÃO WHATSAPP E DENÚNCIAS -->
           <div class="flex items-center space-x-2 md:space-x-3">
-            
-            <!-- Barra de Busca Responsiva (Visível em Todas as Resoluções) -->
-            <form onsubmit="handleSearch(event)" class="flex items-center w-28 xs:w-36 sm:w-48 md:w-56 lg:w-72 shadow-sm" id="header-search-form">
-              <div class="relative w-full">
-                <input type="text" id="header-search-input" placeholder="Pesquisar notícias..." class="w-full bg-gray-50 text-xs sm:text-sm text-gray-900 pl-8 pr-2 py-1.5 md:py-2 rounded-l-md border border-gray-200 focus:outline-none focus:border-primary focus:bg-white transition-all">
-                <i data-lucide="search" class="w-4 h-4 text-gray-400 absolute left-2.5 top-1/2 -translate-y-1/2"></i>
-              </div>
-              <button type="submit" class="bg-[#8B0000] hover:bg-[#6A0000] text-white px-2.5 sm:px-3 py-1.5 md:py-2 rounded-r-md text-xs sm:text-sm font-bold transition-colors flex items-center space-x-1 shrink-0" aria-label="Pesquisar">
-                <span class="hidden md:inline">Buscar</span>
-                <i data-lucide="search" class="w-4 h-4 md:hidden"></i>
-              </button>
-            </form>
-
             <!-- Botão WhatsApp Denúncias (Branding e Canal de Entrada) -->
-            <a href="https://wa.me/5584999999999?text=Olá,%20gostaria%20de%20enviar%20uma%20sugestão%20de%20notícia%20para%20a%20Tribuna%20Norte!" target="_blank" rel="noopener noreferrer" class="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-3 md:px-4 rounded-full text-xs md:text-sm flex items-center space-x-1.5 shadow transition duration-200 transform hover:-translate-y-0.5 hover:shadow-lg" id="btn-whatsapp-header">
+            <a href="https://wa.me/5584999999999?text=Olá,%20gostaria%20de%20enviar%20uma%20sugestão%20de%20notícia%20para%20a%20Tribuna%20Norte!" target="_blank" rel="noopener noreferrer" class="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-1.5 px-3 md:py-2 md:px-4 rounded-full text-xs md:text-sm flex items-center space-x-1.5 shadow transition duration-200 transform hover:-translate-y-0.5 hover:shadow-lg" id="btn-whatsapp-header">
               <i data-lucide="message-square" class="w-4 h-4 fill-white"></i>
               <span class="hidden sm:inline">WhatsApp</span>
             </a>
 
             <!-- Botão Fazer Denúncia Principal -->
-            <button onclick="openDenunciaModal()" class="bg-primary hover:bg-secondary text-white font-bold py-2 px-3 md:px-4 rounded-full text-xs md:text-sm shadow-md transition duration-200 transform hover:-translate-y-0.5 cursor-pointer" id="btn-denuncia-header">
+            <button onclick="openDenunciaModal()" class="bg-primary hover:bg-secondary text-white font-bold py-1.5 px-3 md:py-2 md:px-4 rounded-full text-xs md:text-sm shadow-md transition duration-200 transform hover:-translate-y-0.5 cursor-pointer" id="btn-denuncia-header">
               Denúncias
             </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- LINHA 2: CATEGORIAS E BUSCA (ABAIXO) COM O MESMO PADRÃO DE ESTILO -->
+      <div class="border-t border-gray-100 bg-gray-50/50 hidden md:block">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-between h-12">
+            
+            <!-- MENU DESKTOP -->
+            <nav class="flex space-x-2 lg:space-x-4" id="desktop-nav">
+              <a href="#destaques" class="px-3 py-2 text-xs font-bold uppercase tracking-wider text-gray-600 hover:text-primary hover:bg-red-50 rounded-md transition duration-150">Destaques</a>
+              <a href="#noticias" class="px-3 py-2 text-xs font-bold uppercase tracking-wider text-gray-600 hover:text-primary hover:bg-red-50 rounded-md transition duration-150">Notícias</a>
+              <a href="#marketing" class="px-3 py-2 text-xs font-bold uppercase tracking-wider text-gray-600 hover:text-primary hover:bg-red-50 rounded-md transition duration-150">Marketing</a>
+              <a href="#contato" class="px-3 py-2 text-xs font-bold uppercase tracking-wider text-gray-600 hover:text-primary hover:bg-red-50 rounded-md transition duration-150">Contato</a>
+              <a href="#fato-ou-fake" class="px-3 py-2 text-xs font-bold uppercase tracking-wider text-red-600 hover:text-primary hover:bg-red-50 rounded-md transition duration-150 flex items-center space-x-1.5">
+                <span class="inline-block w-1.5 h-1.5 rounded-full bg-red-600 animate-pulse"></span>
+                <span>Fato ou Fake</span>
+              </a>
+            </nav>
+
+            <!-- Barra de Busca (Mesmo Padrão de Estilo) -->
+            <form onsubmit="handleSearch(event)" class="flex items-center w-56 lg:w-72 shadow-sm" id="header-search-form">
+              <div class="relative w-full">
+                <input type="text" id="header-search-input" placeholder="Pesquisar notícias..." class="w-full bg-white text-xs text-gray-900 pl-8 pr-2 py-1.5 rounded-l-md border border-gray-200 focus:outline-none focus:border-primary transition-all">
+                <i data-lucide="search" class="w-3.5 h-3.5 text-gray-400 absolute left-2.5 top-1/2 -translate-y-1/2"></i>
+              </div>
+              <button type="submit" class="bg-[#8B0000] hover:bg-[#6A0000] text-white px-3 py-1.5 rounded-r-md text-xs font-bold transition-colors flex items-center space-x-1 shrink-0 cursor-pointer" aria-label="Pesquisar">
+                <span>Buscar</span>
+              </button>
+            </form>
+
           </div>
         </div>
       </div>
