@@ -146,7 +146,7 @@
           <!-- ESPAÇO PARA PROPAGANDA (APENAS DESKTOP) -->
           <div class="hidden md:flex items-center bg-gray-900 border border-gray-800 rounded-lg p-2.5 h-[100px] w-[350px] xl:w-[450px] xl:h-[100px] transition-all duration-200 shadow-sm cursor-pointer select-none relative overflow-hidden group/ad">
             <!-- Background Image -->
-            <img src="https://kernel932.github.io/Tribuna/src/assets/images/wooden_chalet_bg_1782996844576.jpg" alt="Chalé de Madeira" class="absolute inset-0 w-full h-full object-cover pointer-events-none group-hover/ad:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
+            <img src="/src/assets/images/wooden_chalet_bg_1782996844576.jpg" alt="Chalé de Madeira" class="absolute inset-0 w-full h-full object-cover pointer-events-none group-hover/ad:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
             <!-- Overlay escuro para legibilidade -->
             <div class="absolute inset-0 bg-black/40 pointer-events-none"></div>
             
@@ -178,13 +178,10 @@
             <!-- MENU DESKTOP -->
             <nav class="flex space-x-2 lg:space-x-4" id="desktop-nav">
               <a href="#destaques" class="px-3 py-2 text-xs font-bold uppercase tracking-wider text-gray-600 hover:text-primary hover:bg-red-50 rounded-md transition duration-150">Destaques</a>
-              <a href="#noticias" class="px-3 py-2 text-xs font-bold uppercase tracking-wider text-gray-600 hover:text-primary hover:bg-red-50 rounded-md transition duration-150">Notícias</a>
-              <a href="#marketing" class="px-3 py-2 text-xs font-bold uppercase tracking-wider text-gray-600 hover:text-primary hover:bg-red-50 rounded-md transition duration-150">Marketing</a>
-              <a href="#contato" class="px-3 py-2 text-xs font-bold uppercase tracking-wider text-gray-600 hover:text-primary hover:bg-red-50 rounded-md transition duration-150">Contato</a>
-              <a href="#fato-ou-fake" class="px-3 py-2 text-xs font-bold uppercase tracking-wider text-red-600 hover:text-primary hover:bg-red-50 rounded-md transition duration-150 flex items-center space-x-1.5">
-                <span class="inline-block w-1.5 h-1.5 rounded-full bg-red-600 animate-pulse"></span>
-                <span>Fato ou Fake</span>
-              </a>
+              <a href="#policial" class="px-3 py-2 text-xs font-bold uppercase tracking-wider text-gray-600 hover:text-primary hover:bg-red-50 rounded-md transition duration-150">Polícia</a>
+              <a href="#esporte" class="px-3 py-2 text-xs font-bold uppercase tracking-wider text-gray-600 hover:text-primary hover:bg-red-50 rounded-md transition duration-150">Esporte</a>
+              <a href="#economia" class="px-3 py-2 text-xs font-bold uppercase tracking-wider text-gray-600 hover:text-primary hover:bg-red-50 rounded-md transition duration-150">Economia</a>
+              <a href="#cultura" class="px-3 py-2 text-xs font-bold uppercase tracking-wider text-gray-600 hover:text-primary hover:bg-red-50 rounded-md transition duration-150">Cultura</a>
             </nav>
 
             <!-- Barra de Busca (Mesmo Padrão de Estilo) -->
@@ -215,13 +212,10 @@
           </button>
         </form>
         <a href="#destaques" onclick="toggleMobileMenu()" class="block px-3 py-2.5 text-gray-700 hover:text-primary hover:bg-red-50 rounded-lg text-base font-semibold">Destaques</a>
-        <a href="#noticias" onclick="toggleMobileMenu()" class="block px-3 py-2.5 text-gray-700 hover:text-primary hover:bg-red-50 rounded-lg text-base font-semibold">Notícias</a>
-        <a href="#marketing" onclick="toggleMobileMenu()" class="block px-3 py-2.5 text-gray-700 hover:text-primary hover:bg-red-50 rounded-lg text-base font-semibold">Marketing</a>
-        <a href="#contato" onclick="toggleMobileMenu()" class="block px-3 py-2.5 text-gray-700 hover:text-primary hover:bg-red-50 rounded-lg text-base font-semibold">Contato</a>
-        <a href="#fato-ou-fake" onclick="toggleMobileMenu()" class="block px-3 py-2.5 text-red-600 hover:bg-red-50 rounded-lg text-base font-bold flex items-center space-x-2">
-          <span class="w-2 h-2 rounded-full bg-red-600"></span>
-          <span>Fato ou Fake</span>
-        </a>
+        <a href="#policial" onclick="toggleMobileMenu()" class="block px-3 py-2.5 text-gray-700 hover:text-primary hover:bg-red-50 rounded-lg text-base font-semibold">Polícia</a>
+        <a href="#esporte" onclick="toggleMobileMenu()" class="block px-3 py-2.5 text-gray-700 hover:text-primary hover:bg-red-50 rounded-lg text-base font-semibold">Esporte</a>
+        <a href="#economia" onclick="toggleMobileMenu()" class="block px-3 py-2.5 text-gray-700 hover:text-primary hover:bg-red-50 rounded-lg text-base font-semibold">Economia</a>
+        <a href="#cultura" onclick="toggleMobileMenu()" class="block px-3 py-2.5 text-gray-700 hover:text-primary hover:bg-red-50 rounded-lg text-base font-semibold">Cultura</a>
         <div class="pt-4 border-t border-gray-100 flex flex-col space-y-2">
           <button onclick="openDenunciaModal(); toggleMobileMenu();" class="w-full bg-primary hover:bg-secondary text-white text-center font-bold py-3 rounded-lg text-sm transition">
             Fazer Denúncia de Rua
@@ -265,7 +259,7 @@
                   EXCLUSIVO TRIBUNA
                 </span>
                 <!-- Imagem da Manchete -->
-                <img src="https://kernel932.github.io/Tribuna/src/assets/images/pedra_elefante_1783003147183.jpg" alt="Pedra do Elefante de Nova Venécia" class="w-full h-72 md:h-96 object-cover object-center transform group-hover:scale-105 transition-transform duration-500" id="img-hero" referrerPolicy="no-referrer">
+                <img src="/src/assets/images/pedra_elefante_1783003147183.jpg" alt="Pedra do Elefante de Nova Venécia" class="w-full h-72 md:h-96 object-cover object-center transform group-hover:scale-105 transition-transform duration-500" id="img-hero" referrerPolicy="no-referrer">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
                 
                 <!-- Texto sobreposto na imagem (Mobile) ou integrado embaixo -->
@@ -508,34 +502,54 @@
             </div>
 
             <!-- Mini Notícia 1 -->
-            <div class="bg-white rounded-xl p-4 border border-gray-100 shadow-sm hover:border-red-200 transition group cursor-pointer" onclick="openArticleModal('esporte-1')">
-              <span class="text-[10px] font-bold text-primary uppercase tracking-widest block mb-1">Esportes</span>
-              <h3 class="text-sm font-bold text-gray-900 group-hover:text-primary transition leading-snug line-clamp-2">
-                Campeonato de Futebol do Norte inicia rodada decisiva neste sábado com grande público esperado
-              </h3>
-              <p class="text-xs text-gray-500 mt-1">Os ingressos já estão esgotados e a segurança local será totalmente reforçada nos arredores do estádio.</p>
-              <div class="flex items-center justify-between mt-3 pt-2 border-t border-gray-50 text-[10px] text-gray-400">
-                <span>Há 35 min</span>
-                <span class="font-semibold text-emerald-600 flex items-center space-x-0.5">
-                  <i data-lucide="check-circle" class="w-3 h-3"></i>
-                  <span>Fato Verificado</span>
-                </span>
+            <div class="bg-white rounded-xl p-3 border border-gray-100 shadow-sm hover:border-red-200 transition group cursor-pointer flex gap-3 h-[140px] overflow-hidden" onclick="openArticleModal('esporte-1')">
+              <!-- Imagem da Matéria (35% de largura) -->
+              <div class="w-[35%] h-full shrink-0 overflow-hidden rounded-lg relative">
+                <img src="/src/assets/images/soccer_brazil_france_1783086834006.jpg" alt="Futebol Brasil vs França" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
+              </div>
+              
+              <!-- Conteúdo -->
+              <div class="flex-1 flex flex-col justify-between min-w-0">
+                <div>
+                  <span class="text-[10px] font-bold text-primary uppercase tracking-widest block mb-0.5">Esportes</span>
+                  <h3 class="text-xs font-bold text-gray-900 group-hover:text-primary transition leading-snug line-clamp-2">
+                    Campeonato de Futebol do Norte inicia rodada decisiva neste sábado com grande público esperado
+                  </h3>
+                  <p class="text-[10px] text-gray-500 mt-0.5 line-clamp-1">Os ingressos já estão esgotados e a segurança local será totalmente reforçada nos arredores do estádio.</p>
+                </div>
+                <div class="flex items-center justify-between pt-1 border-t border-gray-50 text-[9px] text-gray-400 mt-1">
+                  <span>Há 35 min</span>
+                  <span class="font-semibold text-emerald-600 flex items-center space-x-0.5">
+                    <i data-lucide="check-circle" class="w-2.5 h-2.5"></i>
+                    <span>Fato Verificado</span>
+                  </span>
+                </div>
               </div>
             </div>
 
             <!-- Mini Notícia 2 -->
-            <div class="bg-white rounded-xl p-4 border border-gray-100 shadow-sm hover:border-red-200 transition group cursor-pointer" onclick="openArticleModal('servicos-1')">
-              <span class="text-[10px] font-bold text-primary uppercase tracking-widest block mb-1">Interesse Público</span>
-              <h3 class="text-sm font-bold text-gray-900 group-hover:text-primary transition leading-snug line-clamp-2">
-                Nova campanha de vacinação contra a gripe se estende até o final do mês em todas as UBS do Norte
-              </h3>
-              <p class="text-xs text-gray-500 mt-1">O atendimento prioritário será das 8h às 17h. Documentos obrigatórios incluem CPF e carteirinha.</p>
-              <div class="flex items-center justify-between mt-3 pt-2 border-t border-gray-50 text-[10px] text-gray-400">
-                <span>Há 2 horas</span>
-                <span class="font-semibold text-emerald-600 flex items-center space-x-0.5">
-                  <i data-lucide="check-circle" class="w-3 h-3"></i>
-                  <span>Utilidade Oficial</span>
-                </span>
+            <div class="bg-white rounded-xl p-3 border border-gray-100 shadow-sm hover:border-red-200 transition group cursor-pointer flex gap-3 h-[140px] overflow-hidden" onclick="openArticleModal('servicos-1')">
+              <!-- Imagem da Matéria (35% de largura) -->
+              <div class="w-[35%] h-full shrink-0 overflow-hidden rounded-lg relative">
+                <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&q=80&w=300" alt="Campanha de vacinação" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
+              </div>
+              
+              <!-- Conteúdo -->
+              <div class="flex-1 flex flex-col justify-between min-w-0">
+                <div>
+                  <span class="text-[10px] font-bold text-primary uppercase tracking-widest block mb-0.5">Interesse Público</span>
+                  <h3 class="text-xs font-bold text-gray-900 group-hover:text-primary transition leading-snug line-clamp-2">
+                    Nova campanha de vacinação contra a gripe se estende até o final do mês em todas as UBS do Norte
+                  </h3>
+                  <p class="text-[10px] text-gray-500 mt-0.5 line-clamp-1">O atendimento prioritário será das 8h às 17h. Documentos obrigatórios incluem CPF e carteirinha.</p>
+                </div>
+                <div class="flex items-center justify-between pt-1 border-t border-gray-50 text-[9px] text-gray-400 mt-1">
+                  <span>Há 2 horas</span>
+                  <span class="font-semibold text-emerald-600 flex items-center space-x-0.5">
+                    <i data-lucide="check-circle" class="w-2.5 h-2.5"></i>
+                    <span>Utilidade Oficial</span>
+                  </span>
+                </div>
               </div>
             </div>
 
@@ -552,107 +566,121 @@
           </h2>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           
           <!-- Card 1 -->
-          <div class="bg-white rounded-xl p-4 border border-gray-100 shadow-sm hover:shadow-md transition duration-300 flex flex-col justify-between group cursor-pointer" onclick="openArticleModal('recent-1')">
-            <div>
-              <div class="flex justify-between items-center mb-2">
-                <span class="text-[9px] font-bold text-primary uppercase tracking-wider bg-red-50 px-1.5 py-0.5 rounded">Locais</span>
-                <span class="text-[9px] font-mono text-gray-400">Há 5 min</span>
-              </div>
-              <h3 class="text-xs font-bold text-gray-900 group-hover:text-primary transition leading-snug line-clamp-3 mb-2" id="ultimas-title-1">
-                Novos abrigos de ônibus começam a ser instalados na Zona Norte
-              </h3>
-              <p class="text-[11px] text-gray-500 line-clamp-3 mb-4" id="ultimas-desc-1">
-                Ação conjunta da Secretaria de Mobilidade visa cobrir mais de 40 pontos de parada até o fim do trimestre vigente.
-              </p>
+          <div class="bg-white rounded-xl p-3 border border-gray-100 shadow-sm hover:shadow-md transition duration-300 flex gap-3 h-[140px] overflow-hidden group cursor-pointer" onclick="openArticleModal('recent-1')">
+            <!-- Imagem da Matéria (30% de largura) -->
+            <div class="w-[30%] h-full shrink-0 overflow-hidden rounded-lg relative">
+              <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&q=80&w=300" alt="Abrigo de Ônibus" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
             </div>
-            <div class="flex items-center justify-between text-[11px] font-bold text-primary pt-2 border-t border-gray-50 mt-auto">
-              <span>Leia mais →</span>
-              <span class="text-gray-400 font-normal">❤️ <span id="likes-count-recent-1">34</span></span>
+            
+            <!-- Conteúdo -->
+            <div class="flex-1 flex flex-col justify-between min-w-0">
+              <div>
+                <div class="flex justify-between items-center mb-1">
+                  <span class="text-[9px] font-bold text-primary uppercase tracking-wider bg-red-50 px-1.5 py-0.5 rounded">Polícia</span>
+                  <span class="text-[9px] font-mono text-gray-400">Há 5 min</span>
+                </div>
+                <h3 class="text-xs font-bold text-gray-900 group-hover:text-primary transition leading-snug line-clamp-2" id="ultimas-title-1">
+                  Novos abrigos de ônibus começam a ser instalados na Zona Norte
+                </h3>
+                <p class="text-[10px] text-gray-500 line-clamp-1 mt-0.5" id="ultimas-desc-1">
+                  Ação conjunta da Secretaria de Mobilidade visa cobrir mais de 40 pontos de parada até o fim do trimestre vigente.
+                </p>
+              </div>
+              <div class="flex items-center justify-between text-[10px] font-bold text-primary pt-1 border-t border-gray-50 mt-1">
+                <span>Leia mais →</span>
+                <span class="text-gray-400 font-normal">❤️ <span id="likes-count-recent-1">34</span></span>
+              </div>
             </div>
           </div>
 
           <!-- Card 2 -->
-          <div class="bg-white rounded-xl p-4 border border-gray-100 shadow-sm hover:shadow-md transition duration-300 flex flex-col justify-between group cursor-pointer" onclick="openArticleModal('recent-2')">
-            <div>
-              <div class="flex justify-between items-center mb-2">
-                <span class="text-[9px] font-bold text-primary uppercase tracking-wider bg-red-50 px-1.5 py-0.5 rounded">Comunidade</span>
-                <span class="text-[9px] font-mono text-gray-400">Há 12 min</span>
-              </div>
-              <h3 class="text-xs font-bold text-gray-900 group-hover:text-primary transition leading-snug line-clamp-3 mb-2" id="ultimas-title-2">
-                Feira de Artesanato do Alecrim ganha espaço ampliado de alimentação
-              </h3>
-              <p class="text-[11px] text-gray-500 line-clamp-3 mb-4" id="ultimas-desc-2">
-                Evento tradicional dos fins de semana agora conta com novas barracas de pratos típicos regionais e atrações musicais.
-              </p>
+          <div class="bg-white rounded-xl p-3 border border-gray-100 shadow-sm hover:shadow-md transition duration-300 flex gap-3 h-[140px] overflow-hidden group cursor-pointer" onclick="openArticleModal('recent-2')">
+            <!-- Imagem da Matéria (30% de largura) -->
+            <div class="w-[30%] h-full shrink-0 overflow-hidden rounded-lg relative">
+              <img src="https://images.unsplash.com/photo-1533900298318-6b8da08a523e?auto=format&fit=crop&q=80&w=300" alt="Feira de Artesanato" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
             </div>
-            <div class="flex items-center justify-between text-[11px] font-bold text-primary pt-2 border-t border-gray-50 mt-auto">
-              <span>Leia mais →</span>
-              <span class="text-gray-400 font-normal">❤️ <span id="likes-count-recent-2">21</span></span>
+            
+            <!-- Conteúdo -->
+            <div class="flex-1 flex flex-col justify-between min-w-0">
+              <div>
+                <div class="flex justify-between items-center mb-1">
+                  <span class="text-[9px] font-bold text-primary uppercase tracking-wider bg-red-50 px-1.5 py-0.5 rounded">Esporte</span>
+                  <span class="text-[9px] font-mono text-gray-400">Há 12 min</span>
+                </div>
+                <h3 class="text-xs font-bold text-gray-900 group-hover:text-primary transition leading-snug line-clamp-2" id="ultimas-title-2">
+                  Feira de Artesanato do Alecrim ganha espaço ampliado de alimentação
+                </h3>
+                <p class="text-[10px] text-gray-500 line-clamp-1 mt-0.5" id="ultimas-desc-2">
+                  Evento tradicional dos fins de semana agora conta com novas barracas de pratos típicos regionais e atrações musicais.
+                </p>
+              </div>
+              <div class="flex items-center justify-between text-[10px] font-bold text-primary pt-1 border-t border-gray-50 mt-1">
+                <span>Leia mais →</span>
+                <span class="text-gray-400 font-normal">❤️ <span id="likes-count-recent-2">21</span></span>
+              </div>
             </div>
           </div>
 
           <!-- Card 3 -->
-          <div class="bg-white rounded-xl p-4 border border-gray-100 shadow-sm hover:shadow-md transition duration-300 flex flex-col justify-between group cursor-pointer" onclick="openArticleModal('recent-3')">
-            <div>
-              <div class="flex justify-between items-center mb-2">
-                <span class="text-[9px] font-bold text-primary uppercase tracking-wider bg-red-50 px-1.5 py-0.5 rounded">Segurança</span>
-                <span class="text-[9px] font-mono text-gray-400">Há 20 min</span>
-              </div>
-              <h3 class="text-xs font-bold text-gray-900 group-hover:text-primary transition leading-snug line-clamp-3 mb-2" id="ultimas-title-3">
-                Policiamento preventivo ganha reforço de novas viaturas nas avenidas
-              </h3>
-              <p class="text-[11px] text-gray-500 line-clamp-3 mb-4" id="ultimas-desc-3">
-                Rondas ostensivas serão intensificadas nos horários de maior movimento comercial para garantir a tranquilidade dos clientes.
-              </p>
+          <div class="bg-white rounded-xl p-3 border border-gray-100 shadow-sm hover:shadow-md transition duration-300 flex gap-3 h-[140px] overflow-hidden group cursor-pointer" onclick="openArticleModal('recent-3')">
+            <!-- Imagem da Matéria (30% de largura) -->
+            <div class="w-[30%] h-full shrink-0 overflow-hidden rounded-lg relative">
+              <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=300" alt="Policiamento" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
             </div>
-            <div class="flex items-center justify-between text-[11px] font-bold text-primary pt-2 border-t border-gray-50 mt-auto">
-              <span>Leia mais →</span>
-              <span class="text-gray-400 font-normal">❤️ <span id="likes-count-recent-3">48</span></span>
+            
+            <!-- Conteúdo -->
+            <div class="flex-1 flex flex-col justify-between min-w-0">
+              <div>
+                <div class="flex justify-between items-center mb-1">
+                  <span class="text-[9px] font-bold text-primary uppercase tracking-wider bg-red-50 px-1.5 py-0.5 rounded">Segurança</span>
+                  <span class="text-[9px] font-mono text-gray-400">Há 20 min</span>
+                </div>
+                <h3 class="text-xs font-bold text-gray-900 group-hover:text-primary transition leading-snug line-clamp-2" id="ultimas-title-3">
+                  Policiamento preventivo ganha reforço de novas viaturas nas avenidas
+                </h3>
+                <p class="text-[10px] text-gray-500 line-clamp-1 mt-0.5" id="ultimas-desc-3">
+                  Rondas ostensivas serão intensificadas nos horários de maior movimento comercial para garantir a tranquilidade dos clientes.
+                </p>
+              </div>
+              <div class="flex items-center justify-between text-[10px] font-bold text-primary pt-1 border-t border-gray-50 mt-1">
+                <span>Leia mais →</span>
+                <span class="text-gray-400 font-normal">❤️ <span id="likes-count-recent-3">48</span></span>
+              </div>
             </div>
           </div>
 
           <!-- Card 4 -->
-          <div class="bg-white rounded-xl p-4 border border-gray-100 shadow-sm hover:shadow-md transition duration-300 flex flex-col justify-between group cursor-pointer" onclick="openArticleModal('recent-4')">
-            <div>
-              <div class="flex justify-between items-center mb-2">
-                <span class="text-[9px] font-bold text-primary uppercase tracking-wider bg-red-50 px-1.5 py-0.5 rounded">Interesse Público</span>
-                <span class="text-[9px] font-mono text-gray-400">Há 45 min</span>
-              </div>
-              <h3 class="text-xs font-bold text-gray-900 group-hover:text-primary transition leading-snug line-clamp-3 mb-2" id="ultimas-title-4">
-                Inscrições abertas para cursos técnicos gratuitos de tecnologia
-              </h3>
-              <p class="text-[11px] text-gray-500 line-clamp-3 mb-4" id="ultimas-desc-4">
-                Parceria com o instituto tecnológico oferece 150 vagas para jovens e adultos aprenderem desenvolvimento web básico.
-              </p>
+          <div class="bg-white rounded-xl p-3 border border-gray-100 shadow-sm hover:shadow-md transition duration-300 flex gap-3 h-[140px] overflow-hidden group cursor-pointer" onclick="openArticleModal('recent-4')">
+            <!-- Imagem da Matéria (30% de largura) -->
+            <div class="w-[30%] h-full shrink-0 overflow-hidden rounded-lg relative">
+              <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=300" alt="Cursos Técnicos" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" referrerPolicy="no-referrer" />
             </div>
-            <div class="flex items-center justify-between text-[11px] font-bold text-primary pt-2 border-t border-gray-50 mt-auto">
-              <span>Leia mais →</span>
-              <span class="text-gray-400 font-normal">❤️ <span id="likes-count-recent-4">72</span></span>
+            
+            <!-- Conteúdo -->
+            <div class="flex-1 flex flex-col justify-between min-w-0">
+              <div>
+                <div class="flex justify-between items-center mb-1">
+                  <span class="text-[9px] font-bold text-primary uppercase tracking-wider bg-red-50 px-1.5 py-0.5 rounded">Interesse Público</span>
+                  <span class="text-[9px] font-mono text-gray-400">Há 45 min</span>
+                </div>
+                <h3 class="text-xs font-bold text-gray-900 group-hover:text-primary transition leading-snug line-clamp-2" id="ultimas-title-4">
+                  Inscrições abertas para cursos técnicos gratuitos de tecnologia
+                </h3>
+                <p class="text-[10px] text-gray-500 line-clamp-1 mt-0.5" id="ultimas-desc-4">
+                  Parceria com o instituto tecnológico oferece 150 vagas para jovens e adultos aprenderem desenvolvimento web básico.
+                </p>
+              </div>
+              <div class="flex items-center justify-between text-[10px] font-bold text-primary pt-1 border-t border-gray-50 mt-1">
+                <span>Leia mais →</span>
+                <span class="text-gray-400 font-normal">❤️ <span id="likes-count-recent-4">72</span></span>
+              </div>
             </div>
           </div>
 
-          <!-- Card 5 -->
-          <div class="bg-white rounded-xl p-4 border border-gray-100 shadow-sm hover:shadow-md transition duration-300 flex flex-col justify-between group cursor-pointer" onclick="openArticleModal('recent-5')">
-            <div>
-              <div class="flex justify-between items-center mb-2">
-                <span class="text-[9px] font-bold text-primary uppercase tracking-wider bg-red-50 px-1.5 py-0.5 rounded">Economia</span>
-                <span class="text-[9px] font-mono text-gray-400">Há 1 hora</span>
-              </div>
-              <h3 class="text-xs font-bold text-gray-900 group-hover:text-primary transition leading-snug line-clamp-3 mb-2" id="ultimas-title-5">
-                Comércio de bairro registra alta nas vendas do primeiro semestre
-              </h3>
-              <p class="text-[11px] text-gray-500 line-clamp-3 mb-4" id="ultimas-desc-5">
-                Empreendedores de vestuário e calçados celebram aumento expressivo no fluxo de clientes impulsionado por feiras locais.
-              </p>
-            </div>
-            <div class="flex items-center justify-between text-[11px] font-bold text-primary pt-2 border-t border-gray-50 mt-auto">
-              <span>Leia mais →</span>
-              <span class="text-gray-400 font-normal">❤️ <span id="likes-count-recent-5">19</span></span>
-            </div>
-          </div>
+
 
         </div>
       </section>
@@ -679,7 +707,7 @@
       <section class="mb-16 scroll-mt-24" id="noticias">
         <div class="flex items-center justify-between mb-8 border-b border-gray-100 pb-4">
           <div class="border-l-4 border-primary pl-4">
-            <span class="text-xs text-primary font-bold tracking-widest uppercase block mb-0.5">Nosso Escopo</span>
+            <span class="text-xs text-primary font-bold tracking-widest uppercase block mb-0.5">Fala Povo</span>
             <h2 class="text-2xl md:text-3xl font-display font-extrabold tracking-tight text-gray-950">
               Serviços de Cobertura
             </h2>
@@ -772,76 +800,58 @@
         </div>
       </section>
 
-      <!-- SEÇÃO FATO OU FAKE (UX G1 EXCLUSIVA) -->
-      <section class="mb-16 bg-red-50/50 rounded-2xl p-6 md:p-8 border border-red-100 scroll-mt-24" id="fato-ou-fake">
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          
-          <div class="lg:col-span-1 flex flex-col justify-center">
-            <span class="inline-flex items-center space-x-1.5 text-xs text-red-600 font-bold uppercase tracking-wider mb-2">
-              <span class="w-2 h-2 rounded-full bg-red-600 animate-pulse"></span>
-              <span>Checagem de Fatos</span>
+      <!-- SEÇÃO PROPAGANDA: ANUNCIE AQUI -->
+      <section class="mb-16 rounded-2xl border border-gray-150 scroll-mt-24 relative overflow-hidden min-h-[360px] md:min-h-[260px] flex items-center shadow-lg" id="fato-ou-fake">
+        <!-- Imagem de fundo chamativa e com cores vivas -->
+        <div class="absolute inset-0 z-0">
+          <img src="/src/assets/images/advertising_banner_bg_1783082333137.jpg" alt="Anuncie Aqui" class="w-full h-full object-cover" />
+          <!-- Gradiente escuro para garantir excelente legibilidade do texto -->
+          <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/90 to-slate-900/40"></div>
+          <div class="absolute inset-0 bg-black/20"></div>
+        </div>
+
+        <!-- Conteúdo do Banner (Z-index superior) -->
+        <div class="relative z-10 w-full px-6 md:px-12 py-8 flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8">
+          <div class="flex-1 text-left">
+            <span class="inline-flex items-center space-x-1.5 text-[10px] text-yellow-400 font-extrabold uppercase tracking-widest bg-yellow-400/10 px-2.5 py-1 rounded-full border border-yellow-400/20 mb-3">
+              <span class="w-2 h-2 rounded-full bg-yellow-400 animate-pulse"></span>
+              <span>Anuncie Aqui</span>
             </span>
-            <h2 class="text-2xl md:text-3xl font-display font-extrabold text-gray-950 leading-tight">
-              A Tribuna Norte contra as <span class="text-primary">Fake News</span>
+            <h2 class="text-2xl md:text-3.5xl font-display font-extrabold text-white leading-tight tracking-tight">
+              Destaque sua marca na Tribuna Norte!
             </h2>
-            <p class="text-sm text-gray-600 mt-3 leading-relaxed">
-              O projeto de checagem da Tribuna investiga boatos, correntes de redes sociais e declarações públicas para dar o veredito transparente de forma ágil e segura.
+            <p class="text-xs md:text-sm text-gray-200 mt-2 max-w-xl leading-relaxed">
+              Alcance diariamente milhares de leitores altamente engajados e impulsione as vendas do seu negócio com os nossos pacotes de anúncios personalizados de alta conversão.
             </p>
-            <div class="mt-5">
-              <label class="text-xs font-bold text-gray-500 block mb-2 uppercase">Quer que verifiquemos um boato?</label>
-              <div class="flex space-x-2">
-                <input type="text" id="fake-check-input" placeholder="Cole a mensagem aqui..." class="bg-white border border-gray-200 rounded-lg px-3 py-2 text-xs w-full focus:outline-none focus:border-primary">
-                <button onclick="verifyFakeRumor()" class="bg-primary hover:bg-secondary text-white font-bold text-xs px-4 py-2 rounded-lg transition shrink-0">Verificar</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4" id="fato-fake-list">
             
-            <!-- Item 1 Checado -->
-            <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm relative overflow-hidden flex flex-col justify-between group">
-              <!-- Stamp flutuante simulado -->
-              <div class="absolute right-3 top-3 select-none">
-                <span class="stamp-fake font-display font-extrabold text-[10px] px-2 py-0.5 rounded tracking-widest uppercase block">FAKE</span>
-              </div>
-              <div class="pr-12">
-                <span class="text-[9px] text-gray-400 font-bold uppercase block mb-1">Redes Sociais</span>
-                <h4 class="text-xs md:text-sm font-bold text-gray-900 leading-snug">
-                  É FAKE que asfalto novo na Av. Principal tenha sido interrompido por falta de verbas federais
-                </h4>
-                <p class="text-[11px] text-gray-500 mt-2 line-clamp-3">
-                  A Secretaria de Obras informou que a paralisação temporária ocorreu devido ao desvio planejado de canos de alta pressão e já foi totalmente normalizada.
-                </p>
-              </div>
-              <div class="mt-4 pt-3 border-t border-gray-50 text-[10px] text-gray-400 flex justify-between items-center">
-                <span>Investigado há 3 horas</span>
-                <span class="text-primary font-bold hover:underline cursor-pointer" onclick="openArticleModal('fake-asfalto')">Ler análise</span>
-              </div>
+            <!-- Benefícios em destaque -->
+            <div class="flex flex-wrap gap-4 mt-4 text-[11px] text-gray-300 font-semibold">
+              <span class="flex items-center space-x-1">
+                <i data-lucide="eye" class="w-3.5 h-3.5 text-yellow-400"></i>
+                <span>+150k Visualizações Mensais</span>
+              </span>
+              <span class="flex items-center space-x-1">
+                <i data-lucide="target" class="w-3.5 h-3.5 text-yellow-400"></i>
+                <span>Público Segmentado</span>
+              </span>
+              <span class="flex items-center space-x-1">
+                <i data-lucide="trending-up" class="w-3.5 h-3.5 text-yellow-400"></i>
+                <span>Retorno de Investimento</span>
+              </span>
             </div>
-
-            <!-- Item 2 Checado -->
-            <div class="bg-white p-5 rounded-xl border border-gray-100 shadow-sm relative overflow-hidden flex flex-col justify-between group">
-              <!-- Stamp flutuante simulado -->
-              <div class="absolute right-3 top-3 select-none">
-                <span class="stamp-fato font-display font-extrabold text-[10px] px-2 py-0.5 rounded tracking-widest uppercase block">FATO</span>
-              </div>
-              <div class="pr-12">
-                <span class="text-[9px] text-gray-400 font-bold uppercase block mb-1">Campanha Oficial</span>
-                <h4 class="text-xs md:text-sm font-bold text-gray-900 leading-snug">
-                  É FATO que a prefeitura concederá passe livre de ônibus nas datas de exames municipais
-                </h4>
-                <p class="text-[11px] text-gray-500 mt-2 line-clamp-3">
-                  A gratuidade valerá exclusivamente das 7h às 19h mediante apresentação do comprovante de inscrição impresso aos cobradores.
-                </p>
-              </div>
-              <div class="mt-4 pt-3 border-t border-gray-50 text-[10px] text-gray-400 flex justify-between items-center">
-                <span>Investigado há 6 horas</span>
-                <span class="text-primary font-bold hover:underline cursor-pointer" onclick="openArticleModal('fato-passe-livre')">Ler análise</span>
-              </div>
-            </div>
-
           </div>
 
+          <!-- Botões de Ação do Comercial -->
+          <div class="flex flex-col sm:flex-row md:flex-col lg:flex-row gap-3 shrink-0 w-full sm:w-auto md:w-[220px] lg:w-auto">
+            <a href="https://wa.me/5584999999999?text=Olá!%20Gostaria%20de%20anunciar%20na%20Tribuna%20Norte." target="_blank" class="bg-yellow-400 hover:bg-yellow-500 text-slate-950 text-center font-extrabold px-5 py-3 rounded-xl text-xs md:text-sm transition duration-200 shadow-md flex items-center justify-center space-x-2 w-full sm:w-auto group">
+              <i data-lucide="phone" class="w-4 h-4 transition-transform group-hover:scale-110"></i>
+              <span>Falar Conosco</span>
+            </a>
+            <button onclick="openArticleModal('midia-kit')" class="bg-white/10 hover:bg-white/15 text-white border border-white/20 text-center font-bold px-5 py-3 rounded-xl text-xs md:text-sm transition duration-200 flex items-center justify-center space-x-2 w-full sm:w-auto">
+              <i data-lucide="file-text" class="w-4 h-4"></i>
+              <span>Ver Mídia Kit</span>
+            </button>
+          </div>
         </div>
       </section>
 
@@ -905,8 +915,8 @@
           
           <!-- Foto 1 -->
           <div class="relative group overflow-hidden rounded-xl bg-gray-100 aspect-[4/3] shadow-sm hover:shadow-md transition duration-300">
-            <img src="https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&q=80&w=600" alt="Coletiva Imprensa" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">
+            <img src="https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&q=80&w=600" alt="Coletiva Imprensa" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-4 text-white">
               <span class="text-[9px] bg-red-600 px-1.5 py-0.5 rounded font-bold self-start mb-2 uppercase">Entrevista</span>
               <p class="text-xs font-bold">Equipe de reportagem cobrindo esclarecimento de obras municipais.</p>
               <span class="text-[10px] text-gray-300 mt-1">Foto: Ricardo Souza</span>
@@ -915,8 +925,8 @@
 
           <!-- Foto 2 -->
           <div class="relative group overflow-hidden rounded-xl bg-gray-100 aspect-[4/3] shadow-sm hover:shadow-md transition duration-300">
-            <img src="https://images.unsplash.com/photo-1526470608268-f674ce90ebd4?auto=format&fit=crop&q=80&w=600" alt="Câmera de Transmissão" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">
+            <img src="https://images.unsplash.com/photo-1526470608268-f674ce90ebd4?auto=format&fit=crop&q=80&w=600" alt="Câmera de Transmissão" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-4 text-white">
               <span class="text-[9px] bg-red-600 px-1.5 py-0.5 rounded font-bold self-start mb-2 uppercase">Bastidores</span>
               <p class="text-xs font-bold">Câmeras apostadas na avenida central para transmissão ao vivo do tráfego.</p>
               <span class="text-[10px] text-gray-300 mt-1">Foto: Maria Clara</span>
@@ -925,8 +935,8 @@
 
           <!-- Foto 3 -->
           <div class="relative group overflow-hidden rounded-xl bg-gray-100 aspect-[4/3] shadow-sm hover:shadow-md transition duration-300">
-            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=600" alt="Cidade Iluminada" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=600" alt="Cidade Iluminada" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-4 text-white">
               <span class="text-[9px] bg-red-600 px-1.5 py-0.5 rounded font-bold self-start mb-2 uppercase">Região Norte</span>
               <p class="text-xs font-bold">Estudo de mobilidade urbana em andamento nos principais viadutos.</p>
               <span class="text-[10px] text-gray-300 mt-1">Foto: Gabriel Lima</span>
@@ -935,8 +945,8 @@
 
           <!-- Foto 4 -->
           <div class="relative group overflow-hidden rounded-xl bg-gray-100 aspect-[4/3] shadow-sm hover:shadow-md transition duration-300">
-            <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&q=80&w=600" alt="Equipe de TV" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
-            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 text-white">
+            <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&q=80&w=600" alt="Equipe de TV" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-4 text-white">
               <span class="text-[9px] bg-red-600 px-1.5 py-0.5 rounded font-bold self-start mb-2 uppercase">Comunidade</span>
               <p class="text-xs font-bold">Comunidade local se une para comemoração histórica de aniversário do bairro.</p>
               <span class="text-[10px] text-gray-300 mt-1">Foto: Ana Beatriz</span>
@@ -1355,6 +1365,67 @@
     <script>
       // Banco de dados de notícias internas para o modal dinâmico
       const newsDatabase = {
+        'midia-kit': {
+          title: 'Mídia Kit 2026 — Destaque sua Marca na Tribuna Norte',
+          tag: 'MÍDIA KIT',
+          date: 'Tabela de Preços e Formatos',
+          image: '/src/assets/images/advertising_banner_bg_1783082333137.jpg',
+          body: `
+            <div class="space-y-4">
+              <p class="text-sm text-gray-700 leading-relaxed"><strong>Conecte o seu negócio com milhares de leitores altamente engajados todos os dias!</strong> A Tribuna Norte é a maior e mais influente rede de jornalismo local da região, oferecendo relevância de conteúdo e alto índice de confiança.</p>
+              
+              <div class="bg-red-50 border border-red-100 rounded-xl p-4 my-4">
+                <h4 class="font-bold text-red-950 text-sm mb-2 flex items-center gap-1.5">
+                  <i data-lucide="bar-chart-3" class="w-4 h-4 text-primary"></i> Estatísticas Recentes do Nosso Portal
+                </h4>
+                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-gray-700 font-semibold">
+                  <li class="flex items-center gap-1.5">• <strong>+150.000</strong> Visualizações de Página/mês</li>
+                  <li class="flex items-center gap-1.5">• <strong>+40.000</strong> Usuários Únicos Ativos/mês</li>
+                  <li class="flex items-center gap-1.5">• <strong>82%</strong> de Leitores Focados na Região</li>
+                  <li class="flex items-center gap-1.5">• <strong>4.5 min</strong> de Tempo Médio de Leitura</li>
+                </ul>
+              </div>
+
+              <h4 class="font-bold text-slate-900 text-sm mt-4 border-b border-gray-100 pb-1">Formatos de Banner Disponíveis</h4>
+              <div class="space-y-3">
+                <div class="flex justify-between items-center bg-white p-3 rounded-lg border border-gray-100 text-xs">
+                  <div>
+                    <span class="font-bold text-slate-900 block">1. Banner Topo Premium (Super Leaderboard)</span>
+                    <span class="text-gray-500">Formato horizontal no topo do portal com altíssima visibilidade.</span>
+                  </div>
+                  <span class="bg-red-50 text-red-700 font-extrabold px-2.5 py-1 rounded">Sob Consulta</span>
+                </div>
+
+                <div class="flex justify-between items-center bg-white p-3 rounded-lg border border-gray-100 text-xs">
+                  <div>
+                    <span class="font-bold text-slate-900 block">2. Banner Meio de Conteúdo (800x200px / 800x300px)</span>
+                    <span class="text-gray-500">Inserido de forma integrada no fluxo de leitura de notícias.</span>
+                  </div>
+                  <span class="bg-red-50 text-red-700 font-extrabold px-2.5 py-1 rounded">Sob Consulta</span>
+                </div>
+
+                <div class="flex justify-between items-center bg-white p-3 rounded-lg border border-gray-100 text-xs">
+                  <div>
+                    <span class="font-bold text-slate-900 block">3. Publieditorial Patrocinado Completo</span>
+                    <span class="text-gray-500">Matéria exclusiva escrita por jornalistas, otimizada para SEO.</span>
+                  </div>
+                  <span class="bg-red-50 text-red-700 font-extrabold px-2.5 py-1 rounded">Sob Consulta</span>
+                </div>
+              </div>
+
+              <div class="bg-emerald-50 border border-emerald-100 rounded-xl p-4 mt-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+                <div class="space-y-1 text-center sm:text-left">
+                  <p class="text-xs font-bold text-emerald-950">Gostaria de fechar um pacote com desconto?</p>
+                  <p class="text-[11px] text-emerald-700">Fale com o nosso gestor de contas comerciais agora mesmo.</p>
+                </div>
+                <a href="https://wa.me/5584999999999?text=Olá!%20Gostaria%20de%20anunciar%20na%20Tribuna%20Norte." target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold py-2 px-4 rounded-lg text-xs flex items-center justify-center gap-1.5 shrink-0 shadow transition-colors">
+                  <i data-lucide="message-square" class="w-4 h-4"></i> Contatar Comercial
+                </a>
+              </div>
+            </div>
+          `,
+          likes: 58
+        },
         'tribuna-principal': {
           title: 'Tribuna Norte Notícias: Cobertura Jornalística e Atuação na Região',
           tag: 'EXCLUSIVO TRIBUNA',
@@ -2092,6 +2163,11 @@
 
         document.getElementById('article-modal').classList.remove('hidden');
         showToast("Carregando leitura completa...");
+        setTimeout(() => {
+          if (typeof lucide !== 'undefined') {
+            lucide.createIcons();
+          }
+        }, 50);
       }
 
       function closeArticleModal() {
